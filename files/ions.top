@@ -1,0 +1,57 @@
+*>>>>>>       SOD and CLA Ions Topology File           <<<<<<<<<
+*extracted from
+*>>>>>>>>CHARMM22 All-Hydrogen Topology File for Proteins <<<<<<
+*>>>>>>>>>>>>>>>>>>>>> August 1999 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+*>>>>>>> Direct comments to Alexander D. MacKerell Jr. <<<<<<<<<
+*>>>>>> 410-706-7442 or email: alex,mmiris.ab.umd.edu  <<<<<<<<<
+*
+27  1
+
+!
+! references
+!
+!IONS
+!
+!all ions from Roux and coworkers
+!
+!Sodium
+!
+!Beglov, D. and Roux, B., Finite Representation of an Infinite
+!Bulk System: Solvent Boundary Potential for Computer Simulations,
+!Journal of Chemical Physics, 1994, 100: 9050-9063
+! 
+! VdW radii from http://www.webelements.com (Ca scaled using atom radius)
+! 
+! THESE MUST BE IN SYNC WITH ION DEFINITIONS IN meadionize.tcl
+
+MASS   1   SOD  22.989770 NA ! Sodium Ion
+MASS   2   POT  39.102000 K  ! Potassium Ion
+MASS   3   MG   24.305000 MG ! Magnesium Ion
+MASS   4   CAL  40.078000 CA ! Calcium Ion
+MASS   5   CLA  35.450000 CL ! Chloride Anion
+
+RESI SOD          1.00 ! Sodium Ion (R_vdw = 2.27A)
+GROUP
+ATOM SOD  SOD     1.00
+PATCHING FIRST NONE LAST NONE
+ 
+RESI POT          1.00 ! Potassium Ion (R_vdw = 2.75A)
+GROUP
+ATOM POT  POT     1.00
+PATCHING FIRST NONE LAST NONE
+
+RESI MG           2.00 ! Magnesium Ion (R_vdw = 1.73A)
+GROUP
+ATOM MG   MG      2.00
+PATCHING FIRST NONE LAST NONE
+ 
+RESI CAL          2.00 ! Calcium Ion (R_vdw = 2.08A - scaled from www.webelements.com)
+GROUP
+ATOM CAL  CAL     2.00
+PATCHING FIRST NONE LAST NONE
+ 
+RESI CLA         -1.00 ! Chloride Anion (R_vdw = 1.75A)
+GROUP
+ATOM CLA  CLA    -1.00
+PATCHING FIRST NONE LAST NONE
+ 
