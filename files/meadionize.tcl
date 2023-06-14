@@ -7,7 +7,7 @@
 # (C) Ilya Balabin <ilya.balabin@duke.edu>, Duke University, 2004-2006
 
 ### Tell Tcl that we're a package and any dependencies we may have
-package require psfgen 1.2
+package require psfgen
 package provide meadionize 1.2
 
 # meadionize syntax
